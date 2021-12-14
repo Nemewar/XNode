@@ -1,5 +1,5 @@
 # Help:
-Comandos para una tabla de multiplicar
+Comandos para ejecutar la aplicación
 
 ```
       --help     Show help                                             [boolean]
