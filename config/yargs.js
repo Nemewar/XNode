@@ -3,7 +3,7 @@ const argv = require("yargs")
             .option('b',
             {
                 alias : "base",
-                //demandOption : true,
+                demandOption : true,
                 type : "number",
                 describe : "Es la base de la tabla a multiplicar"
             })
@@ -22,7 +22,7 @@ const argv = require("yargs")
                 describe: "Hasta que numero se va a multiplicar la base"
             })
             .check( (argv,options) =>
-            {                
+            {    
                 if(isNaN(argv.b))
                 {
                     throw new Error("La base tiene que ser un numero".red)
